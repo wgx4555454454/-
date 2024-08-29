@@ -9,7 +9,7 @@ using namespace std;
 
 class Enemy {
 public:
-   	int hp;
+        void setHP();
 	int atk;
 	int getATK();
  	int getHP();
