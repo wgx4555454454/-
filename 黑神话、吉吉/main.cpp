@@ -15,22 +15,23 @@ void welcomePage()
 	// 设置文本颜色为红色  
 	SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
 
-	//斗破苍穹页面图
-	string page[11] = {
-		"   00      00                                 00             00             00               0              ",//1
-		"     00    00            000000000000         00          00000000000000000000000    000000000000000000     ",//2
-		"00     00  00                  00             00             00             00      00    0      0    00    ",//3
-		"  00       00                 00        00000000000000              00               0  0          0  0     ",//4
-		"    00     00                00         00    00    0            00    00              00000000000000       ",//5
-		"           00               00          00  00000000          00          00                       00       ",//6
-		"000000000000000000000      0000000000   00   0    0        00  000000000000  00        00000000000000       ",//7
-		"           00             000      00   00    0000       00    00    0  00     00     00                    ",//8
-		"           00            0000      00   00     00              00     000              00000000000000       ",//9
-		"           00           00 00      00   00    0  0             00         00                    0  00       ",//10
-		"           00              0000000000  00   00    000          0000000000000                     00         " //11
+	//黑神话页面图
+	vector<string> page = {
+	"   HHHHHHHHHHHHHHHHHHH          S            SS                             HHHH  ",//1
+	"   H HH     H     HH H           S           SS                        HHHHH      ",//2
+	"   H  HH    H    HH  H       SSSSSSS         SS            HH      HHHH  HH       ",//3
+	"   H   HH   H   HH   H            S          SS             HH           HH       ",//4
+	"   HHHHHHHHHHHHHHHHHHH          S      SSSSSSSSSSSSSS        HH   HHHHHHHHHHHHHHHH",//5
+	"            H                 S  S     SS    SS    SS   HHHHHHH          HH       ",//6
+	"       HHHHHHHHHHH          S    S S   SSSSSSSSSSSSSS        HH          HH       ",//7
+	"            H                    S  S  SS    SS    SS        HH     HHHHHHHHHHHH  ",//8
+	"  HHHHHHHHHHHHHHHHHHHHH          S     SSSSSSSSSSSSSS        HH     HH        HH  ",//9
+	"                                 S           SS              HH HH  HH        HH  ",//10
+	"  HH   HH    HH      HH          S           SS              HHHH   HH        HH  ",//11
+	"HH       HH    HH      HH        S           SS               HH    HHHHHHHHHHHH  " //12
 	};
 
-	for (int i = 0; i < 11; i++) {
+	for (int i = 0; i < page.size(); i++) {
 		Sleep(100);
 		cout << page[i] << endl;
 	}
@@ -42,8 +43,8 @@ void welcomePage()
 	for (int i = 0; i < 55; i++) {
 		cout << "——";
 	}
-	cout << endl << "|***中国海洋大学2024夏季学期c++课程设计***";
-	cout << endl << "| 文字版《斗破苍穹之异火通天》";
+	cout << endl << "| ***中国海洋大学2024夏季学期c++课程设计***";
+	cout << endl << "| 文字版《黑神话·悟空》";
 	cout << endl << "| 游戏介绍：一个简单的文字RPG。";
 	cout << endl << "| 版本：1.0";
 	cout << endl << "| 作者: ";
@@ -59,10 +60,9 @@ void welcomePage()
 
 }
 
-
 int main() {
 	
-	welcomePage();//斗破苍穹页面图
+	welcomePage();//黑神话页面图
 	
 	Menu _menu;
 	_menu.menu();
