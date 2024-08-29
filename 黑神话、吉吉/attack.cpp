@@ -13,6 +13,7 @@ void Game::attack() {
 	// 生成0到6之间的随机整数  
 	int bossID = rand() % 7;
 	Enemy* enemy = &_enemy[bossID];
+	enemy->showword(1);
 	while (character.getHP() > 0 && enemy->getHP() > 0)
 	{
 		int choose = 0;
@@ -43,6 +44,7 @@ void Game::attack() {
 	if (character.getHP() > 0)
 	{
 		cout << "monster is killed" << endl;
+		enemy->showword(2);
 	}
 	else
 	{
