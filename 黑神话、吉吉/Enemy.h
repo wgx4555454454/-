@@ -11,5 +11,7 @@ class Enemy {
 public:
    	int hp;
 	int atk;
+	int getATK();
+ 	int getHP();
 };
 
