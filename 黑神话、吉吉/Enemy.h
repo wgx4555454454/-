@@ -9,6 +9,7 @@ using namespace std;
 
 class Enemy {
 public:
-	
+   	int hp;
+	int atk;
 };
 
