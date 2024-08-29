@@ -9,9 +9,11 @@ using namespace std;
 
 class Enemy {
 public:
-        void setHP();
+    void setHP();
+	int hp;
 	int atk;
 	int getATK();
  	int getHP();
+	vector<string> words;
 };
 
