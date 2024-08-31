@@ -60,7 +60,7 @@ void Store::Buy(Role& Role)
 					Role.setMpotionNum(MpotionNum);
 				}
 			case 3:
-				if (Flame_Slash = true)
+				if (Matter_Flame_Slash = true)
 				{
 					cout << "you matter the skill before" << endl;
 					break;
@@ -78,7 +78,7 @@ void Store::Buy(Role& Role)
 					Role.setCoins(Coins_New);
 				}
 			case 4:
-				if (Frost_Piercing = true)
+				if (Matter_Frost_Piercing = true)
 				{
 					cout << "you matter the skill before" << endl;
 					break;

@@ -27,7 +27,23 @@ void Game::attack() {
 			cout << "u have made " << character.getATK() << " damage to monster" << endl;
 			break;
 		case 2:
-			//¿ÕÈ±ÔÝÊ±
+			cout << "which skill do you want to use" << endl;
+			for (int i = 0; i < skill.size(); i++)
+			{
+				cout << i << " " << skill[i] << endl;
+			}
+			int i = 0;
+			cin >> i;
+			if (checkskill(i))
+			{
+				enemy->setHP(enemy->getHP() - skill.getskill(i));
+				cout << "u have made " << skill.getskill(i) << " damage to monster" << endl;
+				break;
+			}
+			else
+			{
+				cout << "you didn't master this skill" << endl;
+			}
 			break;
 		case 3:
 			cout << "escape successfully" << endl;
